@@ -1,0 +1,31 @@
+ // Pause the current song if it's different or if it's playing
+
+                    if (currentSong.src !== songUrl) {
+                        currentSong.pause();
+                        document.querySelector('.fa-pause')?.classList.replace('fa-pause', 'fa-play');
+                    }
+
+                    // Create or reuse the Audio instance
+                    if (!currentSong || currentSong.src !== songUrl) {
+                        currentSong.src = songUrl
+                    }
+
+                    // Toggle play/pause
+                    if (currentSong.paused) {
+                        currentSong.play();
+                        icon.classList.replace('fa-play', 'fa-pause');
+                        document.querySelector('.player .fa-play').classList.replace("fa-play", "fa-pause")
+
+
+                    } else {
+                        currentSong.pause();
+                        icon.classList.replace('fa-pause', 'fa-play');
+                        document.querySelector('.player .fa-pause').classList.replace("fa-pause", "fa-play")
+                    }
+
+
+
+                    // Reset icon when the song ends
+                    currentSong.onended = () => {
+                        icon.classList.replace('fa-pause', 'fa-play');
+                    };

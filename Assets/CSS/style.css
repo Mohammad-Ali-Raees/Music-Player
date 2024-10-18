@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.sound-list{
+    background-color: #121212;
+    
+
+}
+.main-sound{
+    background-color: #121212;
+}
+.play-pause{
+    background-color: black;
+}
+
+.nav{
+    justify-content: space-between !important;
+}
+.fa-2x{
+    font-size: 21px !important;
+    padding: 10px !important;
+}
+.fa-play,.fa-pause  {
+    font-size: 25px  !important;
+    padding: 10px;
+}
+.fa-play:hover {
+    cursor: pointer !important;
+}
+button{
+    font-weight: 600 !important;
+    padding: 7px 20px !important;
+}
+.soundlist{
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-around !important;
+    
+}
+.soundlist{
+    border: 1px solid #292929;
+}
+.artisit-info p{
+    font-size: 12px;
+}
+.artisit-info h5{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.artisit-info p,h5:hover{
+    cursor: pointer;
+}
+.player {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 140px;
+}
+.songDiv{
+    width: 300px !important;
+}
+.songsDuration{
+    text-align: end;
+    width: 300px !important;
+}
+.SongButtons{
+    width: 400px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress{
+    margin: 2px 0;
+    height: 8px;
+}
+
+.card{
+    background-color: #1a1a1a;
+}
+.card-title{
+    font-size: 20px !important;
+}
+h1,h2,h3,h4,h5,h6,p{
+    color: white;
+}
+
+
+.albumImage{
+    aspect-ratio: 2 / 3;
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.albumTitle{
+    font-weight: 600;
+}
+.AlbumCard{
+    cursor: pointer;
+}
